@@ -1,0 +1,172 @@
+{
+  "extends": ["stylelint-config-standard-scss"],
+  "plugins": ["stylelint-order"],
+  "rules": {
+    "media-feature-range-notation": null,
+    "at-rule-no-unknown": null,
+    "scss/at-rule-no-unknown": true,
+    "no-descending-specificity": null,
+    "block-no-empty": true,
+    "declaration-block-no-duplicate-properties": true,
+    "declaration-empty-line-before": [
+      "always",
+      {
+        "except": ["after-declaration", "first-nested"],
+        "ignore": ["after-comment", "inside-single-line-block"]
+      }
+    ],
+    "at-rule-empty-line-before": [
+      "always",
+      {
+        "except": ["first-nested", "after-same-name"],
+        "ignore": ["after-comment", "inside-block"]
+      }
+    ],
+    "rule-empty-line-before": [
+      "always",
+      {
+        "except": ["first-nested"],
+        "ignore": ["after-comment"]
+      }
+    ],
+    "order/properties-order": [
+      [
+        "position",
+        "z-index",
+        "top",
+        "right",
+        "bottom",
+        "left",
+        "inset",
+
+        "display",
+        "visibility",
+        "flex",
+        "flex-grow",
+        "flex-shrink",
+        "flex-basis",
+        "flex-direction",
+        "flex-wrap",
+        "justify-content",
+        "align-items",
+        "align-content",
+        "order",
+        "grid",
+        "grid-area",
+        "grid-template",
+        "grid-template-rows",
+        "grid-template-columns",
+        "grid-template-areas",
+        "grid-auto-rows",
+        "grid-auto-columns",
+        "grid-auto-flow",
+        "grid-row",
+        "grid-column",
+        "grid-row-start",
+        "grid-row-end",
+        "grid-column-start",
+        "grid-column-end",
+
+        "box-sizing",
+        "overflow",
+        "overflow-x",
+        "overflow-y",
+        "width",
+        "min-width",
+        "max-width",
+        "height",
+        "min-height",
+        "max-height",
+        "aspect-ratio",
+        "margin",
+        "margin-top",
+        "margin-right",
+        "margin-bottom",
+        "margin-left",
+        "padding",
+        "padding-top",
+        "padding-right",
+        "padding-bottom",
+        "padding-left",
+
+        "font",
+        "font-family",
+        "font-size",
+        "font-weight",
+        "font-style",
+        "line-height",
+        "letter-spacing",
+        "text-align",
+        "text-decoration",
+        "text-transform",
+        "white-space",
+        "color",
+
+        "background",
+        "background-color",
+        "background-image",
+        "background-position",
+        "background-size",
+        "background-repeat",
+        "background-attachment",
+
+        "border",
+        "border-color",
+        "border-style",
+        "border-width",
+        "border-top",
+        "border-right",
+        "border-bottom",
+        "border-left",
+        "border-radius",
+
+        "box-shadow",
+        "opacity",
+        "visibility",
+
+        "transition",
+        "transition-delay",
+        "transition-duration",
+        "transition-property",
+        "transition-timing-function",
+        "animation",
+
+        "cursor",
+        "pointer-events",
+        "user-select",
+        "-webkit-user-drag"
+      ],
+      {
+        "unspecified": "bottomAlphabetical"
+      }
+    ],
+    "order/order": [
+      "custom-properties",
+      "dollar-variables",
+      "at-variables",
+      {
+        "type": "at-rule",
+        "name": "extend"
+      },
+      "declarations",
+      {
+        "type": "at-rule",
+        "name": "include"
+      },
+      {
+        "type": "rule",
+        "selector": "^&:"
+      },
+      "rules"
+    ],
+    "property-no-unknown": [
+      true,
+      {
+        "ignoreProperties": ["leading-trim", "text-edge"]
+      }
+    ],
+    "alpha-value-notation": "number",
+    "color-function-notation": "legacy",
+    "color-hex-length": "short"
+  }
+}
