@@ -4,6 +4,8 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  position: relative;
+  z-index: 10;
 }
 
 article,
@@ -25,8 +27,7 @@ html,
 body {
   height: 100%;
   width: 100%;
-  font-family: "Golos Text", sans-serif;
-  /* font-family: sans-serif; */
+  font-synthesis: none;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

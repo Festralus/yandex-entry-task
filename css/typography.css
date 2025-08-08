@@ -1,0 +1,50 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Merriweather", serif;
+  font-feature-settings: "pnum" on, "lnum" on;
+}
+
+p,
+button,
+.note {
+  font-family: "Golos Text", sans-serif;
+  font-feature-settings: "pnum" on, "lnum" on;
+}
+
+h1 {
+  font-size: 36px;
+  line-height: 110%;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+h2 {
+  font-size: 28px;
+  line-height: 135%;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+p {
+  font-size: 18px;
+  line-height: 130%;
+  font-weight: 400;
+}
+
+button {
+  font-size: 16px;
+  line-height: 130%;
+  font-weight: 500;
+
+  /* Safari support */
+  text-edge: cap;
+}
+
+.note {
+  font-size: 18px;
+  line-height: 120%;
+  font-weight: 400;
+}

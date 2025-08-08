@@ -1,0 +1,39 @@
+:root {
+  --color-btn-primary-default: #1f1f1f;
+  --color-btn-primary-hover: #fbce51;
+  --color-btn-primary-disabled: #d6d6d6;
+  --color-btn-secondary-default: rgba(255, 255, 255, 0.9);
+  --color-btn-secondary-hover: #1f1f1f;
+  --color-btn-tretiary-default: transparent;
+  --color-btn-tretiary-hover: #3057a2;
+
+  --color-text-primary-default: #ffffff;
+  --color-text-primary-hover: #1f1f1f;
+  --color-text-secondary-default: #1f1f1f;
+  --color-text-secondary-hover: #ffffff;
+  --color-text-tretiary-default: #3057a2;
+  --color-text-tretiary-hover: #ffffff;
+}
+
+.btn--primary {
+  background-color: var(--color-btn-primary-default);
+  color: var(--color-text-primary-default);
+}
+.btn--primary:hover {
+  background-color: var(--color-btn-primary-hover);
+  color: var(--color-text-primary-hover);
+}
+
+.btn--secondary {
+  background-color: var(--color-btn-secondary-default);
+  color: var(--color-text-secondary-default);
+}
+.btn--secondary:hover {
+  background-color: var(--color-btn-secondary-hover);
+  color: var(--color-text-secondary-hover);
+}
+
+.note {
+  background-color: var(--color-btn-tretiary-default);
+  color: var(--color-text-tretiary-default);
+}
