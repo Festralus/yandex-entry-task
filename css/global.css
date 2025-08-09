@@ -2,7 +2,7 @@
   --color-btn-primary-default: #1f1f1f;
   --color-btn-primary-hover: #fbce51;
   --color-btn-primary-disabled: #d6d6d6;
-  --color-btn-secondary-default: rgb(255, 255, 255, 0.9);
+  --color-btn-secondary-default: transparent;
   --color-btn-secondary-hover: #1f1f1f;
   --color-btn-tretiary-default: transparent;
   --color-btn-tretiary-hover: #3057a2;
@@ -43,4 +43,15 @@
   font-weight: 600;
   letter-spacing: 0.4px;
   color: #f54932;
+}
+
+@media (min-width: 1366px) {
+  .btn--secondary {
+    color: var(--color-btn-secondary-hover);
+    background-color: var(--color-btn-tretiary-default);
+  }
+  .btn--secondary:hover {
+    color: var(--color-text-primary-default);
+    background-color: var(--color-btn-secondary-hover);
+  }
 }

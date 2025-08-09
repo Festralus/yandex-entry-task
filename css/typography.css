@@ -47,9 +47,8 @@ button {
   font-size: 16px;
   font-weight: 500;
   line-height: 130%;
-  text-box-edge: cap;
-
   /* Safari support */
+  text-box-edge: cap;
   text-box-trim: cap;
 }
 

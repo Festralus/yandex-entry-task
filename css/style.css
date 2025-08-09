@@ -3,7 +3,8 @@
 .header {
   position: relative;
   overflow: hidden;
-  width: 374px;
+  /* width: 374px; */
+  width: 100vw;
   height: 774px;
 }
 
@@ -11,7 +12,8 @@
 .header__bg {
   position: absolute;
   top: 0;
-  width: 374px;
+  /* width: 374px; */
+  width: 100vw;
   height: 774px;
   background-color: #e9ded4;
   user-select: none;
@@ -22,7 +24,7 @@
   position: absolute;
   z-index: 1;
   bottom: 66.69px;
-  left: 30.04px;
+  right: 48px;
   width: 297.47px;
   user-select: none;
 }
@@ -31,7 +33,10 @@
   position: absolute;
   z-index: 2;
   bottom: 114.25px;
-  left: 68.81px;
+
+  right: 1px;
+  /* left: 68.81px; */
+
   width: 47.44px;
   user-select: none;
   transform: rotate(-6deg);
@@ -60,8 +65,13 @@
 .header-bg__texture {
   position: absolute;
   z-index: 4;
-  top: 0;
-  left: -253px;
+
+  /* top: 0;
+  left: -253px; */
+
+  bottom: 1px;
+  right: 1px;
+
   min-width: 750px;
   min-height: 812px;
   pointer-events: none;
@@ -87,9 +97,8 @@
   user-select: none;
 }
 
-/* Header logo */
 .header__logo {
-  width: 13.3125rem;
+  width: 213px;
   margin: 18px auto auto 20px;
   user-select: none;
 }
@@ -119,20 +128,17 @@
 .hero__actions {
   display: flex;
   flex-direction: column;
-  margin: 32px 19px auto 20px;
+  margin: 32px 20px auto 20px;
+  max-width: 400px;
   gap: 14px;
 }
-
-.hero__btn-cta {
+.hero__btn {
   padding: 18px 0;
   line-height: 11px;
   border-radius: 66px;
 }
-
 .hero__btn-info {
-  padding: 18px 0;
-  line-height: 11px;
-  border-radius: 66px;
+  background-color: rgba(255, 255, 255, 0.9);
 }
 
 /* Main section */
@@ -326,4 +332,145 @@
 }
 
 @media (min-width: 1366px) {
+  /* Header section */
+
+  .header {
+    height: 700px;
+  }
+
+  /* Background */
+  .header__bg {
+    height: 700px;
+  }
+
+  .header-bg__circle {
+    bottom: 84px;
+    right: 33px;
+    width: 660px;
+    transform: rotate(15deg);
+  }
+
+  .header-bg__figure--king {
+    width: 103.8px;
+    bottom: 171px;
+    right: 520px;
+    width: 103.8px;
+  }
+
+  .header-bg__figure--queen {
+    right: 176px;
+    bottom: 279px;
+    width: 113.16px;
+    height: 252.44px;
+    transform: rotate(7.5deg);
+  }
+
+  .header-bg__city {
+    right: -140px;
+    bottom: -21px;
+    min-width: 1623.5px;
+  }
+
+  .header-bg__texture {
+    bottom: -60px;
+    right: -276px;
+    min-width: 1920px;
+    min-height: 881px;
+  }
+
+  .header-bg__figure--knight {
+    right: 356px;
+    bottom: -36px;
+    width: 153.87px;
+  }
+
+  .header-bg__figure--pawn {
+    display: block;
+    width: 82.61px;
+    right: 44px;
+    bottom: 20px;
+  }
+
+  .header__logo {
+    width: 245px;
+    margin: 26px auto auto 72px;
+  }
+
+  /* Hero */
+
+  .hero__title {
+    margin: 62px 0 0 72px;
+    max-width: 552px;
+    font-size: 60px;
+    line-height: 110%;
+    letter-spacing: 0.8px;
+  }
+  .hero__title-second {
+    display: block;
+    margin: 0 auto auto 91.5px;
+    letter-spacing: 0.6px;
+    white-space: nowrap;
+  }
+  .hero__title-third {
+    margin: auto 9px auto auto;
+    text-align: right;
+    letter-spacing: 0.6px;
+    white-space: nowrap;
+  }
+
+  .hero__desc {
+    margin: 24px auto auto 72px;
+    display: block;
+    max-width: 542px;
+    text-align: center;
+  }
+  .hero__desc-second {
+    display: block;
+  }
+
+  .hero__actions {
+    margin: 40px auto auto 72px;
+    flex-direction: row;
+    gap: 16px;
+  }
+  .hero__btn {
+    flex: 1;
+    min-width: 263px;
+    max-width: 263px;
+    height: 72px;
+    padding: 0 49px;
+    font-size: 16px;
+    line-height: 21px;
+  }
+
+  .hero__btn-info {
+    background-color: var(--color-btn-secondary-default);
+    border: 2px solid var(--color-btn-secondary-hover);
+  }
+
+  /* Main section */
+
+  /* Marquee */
+  .marquee {
+    font-size: 22px;
+    line-height: 24px;
+  }
+  .marquee__track {
+    padding-block: 18px;
+  }
+
+  /* Promo */
+  .promo__block--support {
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+}
+
+@media (min-width: 1620px) {
+  .header-bg__texture {
+    bottom: 0;
+    right: 0;
+    min-width: 1920px;
+    min-height: 881px;
+  }
 }

@@ -83,9 +83,18 @@
 
         <!-- header__bg layer 4 -->
         <img
-          src="assets/images/background-texture-header.webp"
-          alt=""
           class="header-bg__texture"
+          alt=""
+          src="assets/images/background-texture-header-mobile.webp"
+          srcset="
+            assets/images/background-texture-header-mobile.webp   750w,
+            assets/images/background-texture-header-tablet.webp  1366w,
+            assets/images/background-texture-header-desktop.webp 1921w
+          "
+          sizes="(max-width: 1366px) 100vw, 1921px"
+          width="750"
+          height="812"
+          loading="lazy"
           draggable="false"
         />
 
@@ -119,15 +128,23 @@
       </h1>
 
       <p class="hero__desc">
-        Оплатите взнос на телеграммы для организации Международного васюкинского
-        турнира по шахматам
+        Оплатите взнос на телеграммы для организации
+        <span class="hero__desc-second">
+          Международного васюкинского турнира по шахматам</span
+        >
       </p>
 
       <div class="hero__actions">
-        <button class="btn btn--primary hero__btn-cta" id="scroll-to-support">
+        <button
+          class="btn btn--primary hero__btn hero__btn-cta"
+          id="scroll-to-support"
+        >
           Поддержать шахматную мысль
         </button>
-        <button class="btn btn--secondary hero__btn-info" id="scroll-to-info">
+        <button
+          class="btn btn--secondary hero__btn hero__btn-info"
+          id="scroll-to-info"
+        >
           Подробнее о турнире
         </button>
       </div>
