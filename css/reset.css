@@ -1,11 +1,11 @@
 *,
 *::before,
 *::after {
+  position: relative;
+  z-index: 10;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  position: relative;
-  z-index: 10;
 }
 
 article,
@@ -25,12 +25,12 @@ section {
 
 html,
 body {
-  height: 100%;
   width: 100%;
-  font-synthesis: none;
+  height: 100%;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-synthesis: none;
   scroll-behavior: smooth;
 }
 
@@ -54,11 +54,11 @@ input,
 optgroup,
 select,
 textarea {
-  font: inherit;
   margin: 0;
   padding: 0;
-  border: none;
+  font: inherit;
   background: none;
+  border: none;
   outline: none;
 }
 
@@ -94,8 +94,8 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: inherit;
   font-size: inherit;
+  font-weight: inherit;
 }
 
 :focus {
@@ -104,7 +104,7 @@ h6 {
 
 body {
   overflow-x: hidden;
-  word-wrap: break-word;
-  background-color: #fff;
   color: #000;
+  background-color: #fff;
+  word-wrap: break-word;
 }

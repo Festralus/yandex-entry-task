@@ -12,3 +12,5 @@ npm-debug.log*
 fig
 assets/images/unused
 css/unused.css
+package.json
+package-lock.json
