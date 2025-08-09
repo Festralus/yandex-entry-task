@@ -27,24 +27,28 @@
     <link rel="stylesheet" href="css/style.css" />
 
     <!-- Favicon -->
-    <link rel="icon" href="assets/favicons/favicon.ico" type="image/x-icon" />
-    <link rel="icon" href="assets/favicons/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="./assets/favicons/favicon.ico" type="image/x-icon" />
+    <link
+      rel="icon"
+      href="./assets/favicons/favicon.svg"
+      type="image/svg+xml"
+    />
     <link
       rel="apple-touch-icon"
       sizes="180x180"
-      href="assets/favicons/favicon-apple-touch.png"
+      href="./assets/favicons/favicon-apple-touch.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="192x192"
-      href="assets/favicons/favicon-192x192.png"
+      href="./assets/favicons/favicon-192x192.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="512x512"
-      href="assets/favicons/favicon-512x512.png"
+      href="./assets/favicons/favicon-512x512.png"
     />
   </head>
 
@@ -65,12 +69,14 @@
           src="assets/images/background-king.webp"
           alt=""
           class="header__bg__figure header__bg__figure--king"
+          aria-hidden="true"
           draggable="false"
         />
         <img
           src="assets/images/background-queen.webp"
           alt=""
           class="header__bg__figure header__bg__figure--queen"
+          aria-hidden="true"
           draggable="false"
         />
 
@@ -79,6 +85,7 @@
           src="assets/images/background-city.webp"
           alt=""
           class="header__bg__city"
+          aria-hidden="true"
           draggable="false"
         />
 
@@ -105,12 +112,14 @@
           src="assets/images/background-knight.webp"
           alt=""
           class="header__bg__figure header__bg__figure--knight"
+          aria-hidden="true"
           draggable="false"
         />
         <img
           src="assets/images/background-pawn.webp"
           alt=""
           class="header__bg__figure header__bg__figure--pawn"
+          aria-hidden="true"
           draggable="false"
         />
       </div>
@@ -125,27 +134,29 @@
       <div class="hero">
         <h1 class="hero__title">
           ПРЕВРАТИТЕ УЕЗДНЫЙ ГОРОД
-          <span class="hero__title-second">В СТОЛИЦУ</span>
-          <span class="hero__title-third">ЗЕМНОГО ШАРА</span>
+          <span class="hero__title-line">В СТОЛИЦУ</span>
+          <span class="hero__title-line hero__title-line--suffix"
+            >ЗЕМНОГО ШАРА</span
+          >
         </h1>
 
         <p class="hero__desc">
           Оплатите взнос на телеграммы для организации
-          <span class="hero__desc-second">
+          <span class="hero__desc-accent">
             Международного васюкинского турнира по шахматам</span
           >
         </p>
 
         <div class="hero__actions">
           <a
-            class="btn btn--primary hero__btn hero__btn-cta"
+            class="btn--primary hero__btn hero__btn-cta btn"
             id="scroll-to-support"
             href="#support-block"
           >
             Поддержать шахматную мысль
           </a>
           <a
-            class="btn btn--secondary hero__btn hero__btn-info"
+            class="btn--secondary hero__btn hero__btn-info btn"
             id="scroll-to-info"
             href="#info-block"
           >
@@ -184,14 +195,15 @@
           <h2 class="promo__title">
             <span class="promo__title--span">
               ЧТОБЫ ПОДДЕРЖАТЬ
-              <span class="promo__title--second"> МЕЖДУНАРОДНЫЙ </span
+              <span class="promo__title-accent"> МЕЖДУНАРОДНЫЙ </span
               >ВАСЮКИНСКИЙ ТУРНИР</span
             >
             <span class="promo__subtitle">
-              ПОСЕТИТЕ <span class="promo__subtitle--second"> ЛЕКЦИЮ </span> НА
+              ПОСЕТИТЕ <span class="promo__subtitle-accent"> ЛЕКЦИЮ </span> НА
               ТЕМУ:
               <span class="promo__strong--support strong"
-                >«ПЛОДОТВ<span class="promo__strong--support--second"
+                >«ПЛОДОТВ<span
+                  class="promo__strong-part promo__strong-part--emphasis"
                   >ОРНАЯ ДЕБЮТНАЯ ИДЕЯ»</span
                 ></span
               >
@@ -201,6 +213,8 @@
             class="promo__image--support"
             alt="Афиша Международного васюкинского турнира"
             src="assets/images/tournament.webp"
+            loading="lazy"
+            decoding="async"
             draggable="false"
           />
         </div>
@@ -211,6 +225,8 @@
               src="assets/images/ostap-bender.webp"
               class="promo__image--session"
               alt="Остап Бендер проводит сеанс"
+              loading="lazy"
+              decoding="async"
               draggable="false"
             />
             <img
@@ -218,6 +234,8 @@
               alt=""
               class="promo__texture"
               aria-hidden="true"
+              loading="lazy"
+              decoding="async"
               draggable="false"
             />
           </div>
@@ -228,9 +246,12 @@
               >ОДНОВРЕМЕННОЙ ИГ<span class="promo__strong--second"
                 >РЫ В ШАХМАТЫ</span
               >
-              НА 160 ДО<span class="promo__strong--third">СКАХ</span></span
+              НА 160 ДО<span
+                class="promo__strong-part promo__strong-part--suffix"
+                >СКАХ</span
+              ></span
             >
-            ГРОССМЕЙСТЕРА <span class="promo__text--second">О. БЕНДЕРА</span>
+            ГРОССМЕЙСТЕРА <span class="promo__text-suffix">О. БЕНДЕРА</span>
           </h2>
 
           <table class="info-table" id="info-block">
