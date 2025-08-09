@@ -15,7 +15,8 @@ li {
 
 p,
 button,
-.note {
+.note,
+td {
   font-family: "Golos Text", sans-serif;
   font-kerning: normal;
   text-rendering: optimizeLegibility;
@@ -47,11 +48,17 @@ button {
   font-weight: 500;
 
   /* Safari support */
-  text-edge: cap;
+  text-box-trim: cap;
+  text-box-edge: cap;
 }
 
 .note {
   font-size: 18px;
-  line-height: 120%;
+  line-height: 22px;
   font-weight: 400;
+}
+
+td {
+  font-size: 20px;
+  line-height: 24px;
 }

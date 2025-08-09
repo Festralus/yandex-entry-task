@@ -30,10 +30,12 @@ function addAnimation() {
     const marqueeTrack = document.querySelector(".marquee__track");
     const marqueeContent = Array.from(marqueeTrack.children);
 
-    marqueeContent.forEach((el) => {
-      const duplicatedElement = el.cloneNode(true);
-      duplicatedElement.setAttribute("aria-hidden", true);
-      marqueeTrack.appendChild(duplicatedElement);
-    });
+    for (let i = 0; i < 3; i++) {
+      marqueeContent.forEach((el) => {
+        const duplicatedElement = el.cloneNode(true);
+        duplicatedElement.setAttribute("aria-hidden", "true");
+        marqueeTrack.appendChild(duplicatedElement);
+      });
+    }
   });
 }
