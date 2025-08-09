@@ -117,7 +117,7 @@
   letter-spacing: 0.7px;
 }
 
-.hero__title-line--accent {
+.hero__title-line {
   display: block;
   margin: 0 auto auto 63.25px;
   letter-spacing: 0.3px;
@@ -432,7 +432,7 @@
     letter-spacing: 0.8px;
   }
 
-  .hero__title-line--accent {
+  .hero__title-line {
     display: block;
     margin: 0 auto auto 91.5px;
     letter-spacing: 0.6px;
@@ -613,27 +613,27 @@
 
   /* Background */
   .header__bg__circle {
-    right: 309px;
+    right: 293px;
   }
 
   .header__bg__figure--king {
-    right: 796px;
+    right: 780px;
   }
 
   .header__bg__figure--queen {
-    right: 452px;
+    right: 436px;
   }
 
   .header__bg__city {
-    right: 136px;
+    right: 120px;
   }
 
   .header__bg__figure--knight {
-    right: 632px;
+    right: 617px;
   }
 
   .header__bg__figure--pawn {
-    right: 320px;
+    right: 304px;
   }
 
   .header__logo {
@@ -652,7 +652,7 @@
   }
 
   .hero__title-line--suffix {
-    margin: 0;
+    margin: auto 17px auto auto;
     letter-spacing: 0.5px;
   }
 
@@ -661,6 +661,6 @@
   }
 
   .hero__actions {
-    margin: 40px 160px auto auto;
+    margin: 40px 139px auto auto;
   }
 }
