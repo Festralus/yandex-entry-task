@@ -37,3 +37,9 @@
   background-color: var(--color-btn-tretiary-default);
   color: var(--color-text-tretiary-default);
 }
+
+.strong {
+  color: #f54932;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+}

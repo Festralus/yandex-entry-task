@@ -3,34 +3,41 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+li {
   font-family: "Merriweather", serif;
-  font-feature-settings: "pnum" on, "lnum" on;
+  font-kerning: normal;
+  text-rendering: optimizeLegibility;
+  font-variant-numeric: lining-nums proportional-nums;
+  font-feature-settings: "kern" 1, "liga" 1, "lnum" 1, "pnum" 1;
+  text-transform: none;
 }
 
 p,
 button,
 .note {
   font-family: "Golos Text", sans-serif;
-  font-feature-settings: "pnum" on, "lnum" on;
+  font-kerning: normal;
+  text-rendering: optimizeLegibility;
+  font-variant-numeric: lining-nums proportional-nums;
+  font-feature-settings: "kern" 1, "liga" 1, "lnum" 1, "pnum" 1;
+  text-transform: none;
 }
 
 h1 {
   font-size: 36px;
-  line-height: 110%;
+  line-height: 40px;
   font-weight: 400;
-  text-transform: uppercase;
 }
 h2 {
   font-size: 28px;
-  line-height: 135%;
+  line-height: 38px;
   font-weight: 400;
-  text-transform: uppercase;
 }
 
 p {
   font-size: 18px;
-  line-height: 130%;
+  line-height: 23px;
   font-weight: 400;
 }
 

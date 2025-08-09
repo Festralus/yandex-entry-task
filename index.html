@@ -11,8 +11,12 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
+    <!-- <link
       href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;700;900&family=Merriweather:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    /> -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;700;900&display=swap&subset=cyrillic,cyrillic-ext&family=Merriweather:wght@400;700;900&display=swap&subset=cyrillic,cyrillic-ext"
       rel="stylesheet"
     />
 
@@ -47,14 +51,14 @@
   <body>
     <header class="header">
       <div class="header__bg">
-        <!-- layer 1 -->
+        <!-- header__bg layer 1 -->
         <img
           src="assets/images/background-circle.webp"
           alt=""
           class="header-bg__circle"
         />
 
-        <!-- layer 2 -->
+        <!-- header__bg layer 2 -->
         <img
           src="assets/images/background-king.webp"
           alt=""
@@ -66,21 +70,21 @@
           class="header-bg__figure header-bg__figure--queen"
         />
 
-        <!-- layer 3 -->
+        <!-- header__bg layer 3 -->
         <img
           src="assets/images/background-city.webp"
           alt=""
           class="header-bg__city"
         />
 
-        <!-- layer 4 -->
+        <!-- header__bg layer 4 -->
         <img
-          src="assets/images/background-texture.webp"
+          src="assets/images/background-texture-header.webp"
           alt=""
           class="header-bg__texture"
         />
 
-        <!-- layer 5 -->
+        <!-- header__bg layer 5 -->
         <img
           src="assets/images/background-knight.webp"
           alt=""
@@ -101,9 +105,9 @@
       </div>
 
       <h1 class="hero__title">
-        Превратите уездный город
-        <span class="hero__title-second"> в столицу</span>
-        <span class="hero__title-third">земного шара</span>
+        ПРЕВРАТИТЕ УЕЗДНЫЙ ГОРОД
+        <span class="hero__title-second">В СТОЛИЦУ</span>
+        <span class="hero__title-third">ЗЕМНОГО ШАРА</span>
       </h1>
 
       <p class="hero__desc">
@@ -112,10 +116,10 @@
       </p>
 
       <div class="hero__actions">
-        <button class="btn btn--primary hero__btn-cta">
+        <button class="btn btn--primary hero__btn-cta" id="scroll-to-support">
           Поддержать шахматную мысль
         </button>
-        <button class="btn btn--secondary hero__btn-more">
+        <button class="btn btn--secondary hero__btn-info" id="scroll-to-info">
           Подробнее о турнире
         </button>
       </div>
@@ -125,42 +129,74 @@
       <section class="marquee" aria-label="Бегущая строка">
         <ul class="marquee__track">
           <li class="marquee__item">
-            Дело помощи утопающим — дело рук самих
-            утопающих!&nbsp;&nbsp;•&nbsp;&nbsp;
+            ДЕЛО ПОМОЩИ УТОПАЮЩИМ — ДЕЛО РУК САМИХ УТОПАЮЩИХ!&nbsp;&nbsp;<span
+              class="marquee__dot"
+              >•</span
+            >&nbsp;&nbsp;
           </li>
           <li class="marquee__item">
-            Шахматы двигают вперед не только культуру, но и
-            экономику!&nbsp;&nbsp;•&nbsp;&nbsp;
+            ШАХМАТЫ ДВИГАЮТ ВПЕРЕД НЕ ТОЛЬКО КУЛЬТУРУ, НО И
+            ЭКОНОМИКУ!&nbsp;&nbsp;<span class="marquee__dot">•</span>
+            &nbsp;&nbsp;
           </li>
           <li class="marquee__item">
-            Лед тронулся, господа присяжные заседатели!
-            &nbsp;&nbsp;•&nbsp;&nbsp;
+            ЛЕД ТРОНУЛСЯ, ГОСПОДА ПРИСЯЖНЫЕ ЗАСЕДАТЕЛИ!&nbsp;&nbsp;<span
+              class="marquee__dot"
+              >•</span
+            >
+            &nbsp;&nbsp;
           </li>
         </ul>
       </section>
 
       <section class="promo">
-        <div class="promo__block promo__block--support">
-          <div class="promo__title">
-            Чтобы поддержать Международный васюкинский турнир
-          </div>
-          <img class="promo__image" src="assets/images/tournament.webp" />
-          <div class="promo__subtitle">
-            посетите лекцию на тему: <span>«Плодотворная дебютная идея»</span>
-          </div>
+        <div class="promo__block promo__block--support" id="support-block">
+          <h2 class="promo__title">
+            ЧТОБЫ ПОДДЕРЖАТЬ
+            <span class="promo__title--second"> МЕЖДУНАРОДНЫЙ </span>ВАСЮКИНСКИЙ
+            ТУРНИР
+          </h2>
+          <img
+            class="promo__block--support__image"
+            src="assets/images/tournament.webp"
+          />
+          <h2 class="promo__subtitle">
+            ПОСЕТИТЕ <span class="promo__subtitle--second"> ЛЕКЦИЮ </span> НА
+            ТЕМУ:
+            <span class="support__strong strong"
+              >«ПЛОДОТВ<span class="support__strong--second"
+                >ОРНАЯ ДЕБЮТНАЯ ИДЕЯ»</span
+              ></span
+            >
+          </h2>
         </div>
 
         <div class="promo__block promo__block--session">
-          <img src="assets/images/tournament.webp" class="promo__image" />
-          >
-          <div class="promo__text">
-            и Сеанс
-            <span class="promo__strong"
-              >одновременной игры в шахматы на 160 досках</span
+          <img
+            src="assets/images/ostap-bender.webp"
+            class="promo__block--session__image"
+            alt="Остап Бендер проводит сеанс"
+          />
+
+          <img
+            src="assets/images/background-texture-promo.webp"
+            class="promo__texture"
+            alt=""
+            aria-hidden="true"
+          />
+
+          <h2 class="promo__text">
+            И СЕАНС
+            <span class="strong promo__strong"
+              >ОДНОВРЕМЕННОЙ ИГ<span class="promo__strong--second"
+                >РЫ В ШАХМАТЫ</span
+              >
+              НА 160 ДО<span class="promo__strong--thrid">СКАХ</span></span
             >
-            гроссмейстера О. Бендера
-          </div>
-          <table class="info-table">
+            ГРОССМЕЙСТЕРА О. БЕНДЕРА
+          </h2>
+
+          <table class="info-table" id="info-block">
             <tr>
               <td class="info-table__key">Место проведения:</td>
               <td class="info-table__val">Клуб «Картонажник»</td>
@@ -180,7 +216,7 @@
             <tr>
               <td class="info-table__key">Взнос на телеграммы:</td>
               <td class="info-table__val">
-                <span>100 руб.</span> 21 руб. 16 коп.
+                <span>100 руб.&nbsp;</span> 21 руб. 16 коп.
               </td>
             </tr>
           </table>
@@ -190,12 +226,16 @@
         </div>
       </section>
 
-      <section class="participants" id="participants"></section>
+      <!-- To be continued -->
+      <section class="stages"></section>
 
-      <section class="stages" id="stages"></section>
+      <section class="participants"></section>
     </main>
 
-    <footer class="footer" id="footer"></footer>
+    <footer class="footer">
+      <section class="marquee-footer"></section>
+      <section class="disclaimer"></section>
+    </footer>
 
     <!-- JavaScript -->
     <script src="js/script.js"></script>

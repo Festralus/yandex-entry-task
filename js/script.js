@@ -1,3 +1,22 @@
+// Support anchor
+document
+  .getElementById("scroll-to-support")
+  .addEventListener("click", function () {
+    document
+      .getElementById("support-block")
+      .scrollIntoView({ behavior: "smooth" });
+  });
+
+// Info anchor
+document
+  .getElementById("scroll-to-info")
+  .addEventListener("click", function () {
+    document
+      .getElementById("info-block")
+      .scrollIntoView({ behavior: "smooth" });
+  });
+
+// Marquee and screen-reader support
 const scrollers = document.querySelectorAll(".marquee");
 
 if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
