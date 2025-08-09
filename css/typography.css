@@ -49,11 +49,11 @@ a {
   font-size: 16px;
   font-weight: 500;
   line-height: 130%;
+  text-align: center;
+
   /* Safari support */
   text-box-edge: cap;
   text-box-trim: cap;
-
-  text-align: center;
 }
 
 .note {
