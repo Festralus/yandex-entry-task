@@ -3,7 +3,6 @@
 .header {
   position: relative;
   overflow: hidden;
-  /* width: 374px; */
   width: 100vw;
   height: 774px;
 }
@@ -12,7 +11,6 @@
 .header__bg {
   position: absolute;
   top: 0;
-  /* width: 374px; */
   width: 100vw;
   height: 774px;
   background-color: #e9ded4;
@@ -21,7 +19,7 @@
   overflow: hidden;
 }
 
-.header-bg__circle {
+.header__bg__circle {
   position: absolute;
   z-index: 1;
   bottom: 66.69px;
@@ -30,20 +28,17 @@
   user-select: none;
 }
 
-.header-bg__figure--king {
+.header__bg__figure--king {
   position: absolute;
   z-index: 2;
   bottom: 114.25px;
-
-  right: 1px;
-  /* left: 68.81px; */
-
+  right: 260px;
   width: 47.44px;
   user-select: none;
   transform: rotate(-6deg);
 }
 
-.header-bg__figure--queen {
+.header__bg__figure--queen {
   position: absolute;
   z-index: 2;
   right: 91.5px;
@@ -54,7 +49,7 @@
   transform: rotate(15deg);
 }
 
-.header-bg__city {
+.header__bg__city {
   position: absolute;
   z-index: 3;
   right: -110px;
@@ -63,16 +58,11 @@
   user-select: none;
 }
 
-.header-bg__texture {
+.header__bg__texture {
   position: absolute;
   z-index: 4;
-
-  /* top: 0;
-  left: -253px; */
-
-  bottom: 1px;
-  right: 1px;
-
+  bottom: 0;
+  right: -253px;
   min-width: 750px;
   min-height: 812px;
   pointer-events: none;
@@ -81,7 +71,7 @@
   object-fit: cover;
 }
 
-.header-bg__figure--knight {
+.header__bg__figure--knight {
   position: absolute;
   z-index: 5;
   right: 141px;
@@ -91,7 +81,7 @@
   transform: rotate(-10.5deg);
 }
 
-.header-bg__figure--pawn {
+.header__bg__figure--pawn {
   position: absolute;
   z-index: 5;
   display: none;
@@ -172,7 +162,6 @@
   padding-block: 10px;
 
   /* --gap: 12px; */
-
   /* gap: var(--gap); */
 }
 
@@ -242,7 +231,7 @@
   letter-spacing: 1px;
 }
 
-.support__strong--second {
+.promo__strong--support--second {
   letter-spacing: -0.1px;
 }
 
@@ -285,7 +274,7 @@
   letter-spacing: -0.3px;
 }
 
-.promo__strong--thrid {
+.promo__strong--third {
   letter-spacing: -1px;
 }
 
@@ -338,6 +327,14 @@
   margin: 26px auto 60px;
 }
 
+@media (min-width: 400px) {
+  /* To be continued */
+}
+
+@media (min-width: 617px) {
+  /* To be continued */
+}
+
 @media (min-width: 1366px) {
   /* Header section */
 
@@ -350,21 +347,21 @@
     height: 700px;
   }
 
-  .header-bg__circle {
+  .header__bg__circle {
     bottom: 84px;
     right: 33px;
     width: 660px;
     transform: rotate(15deg);
   }
 
-  .header-bg__figure--king {
+  .header__bg__figure--king {
     width: 103.8px;
     bottom: 171px;
     right: 520px;
     width: 103.8px;
   }
 
-  .header-bg__figure--queen {
+  .header__bg__figure--queen {
     right: 176px;
     bottom: 279px;
     width: 113.16px;
@@ -372,26 +369,26 @@
     transform: rotate(7.5deg);
   }
 
-  .header-bg__city {
+  .header__bg__city {
     right: -140px;
     bottom: -21px;
     min-width: 1623.5px;
   }
 
-  .header-bg__texture {
+  .header__bg__texture {
     bottom: -60px;
     right: -276px;
     min-width: 1920px;
     min-height: 881px;
   }
 
-  .header-bg__figure--knight {
+  .header__bg__figure--knight {
     right: 356px;
     bottom: -36px;
     width: 153.87px;
   }
 
-  .header-bg__figure--pawn {
+  .header__bg__figure--pawn {
     display: block;
     width: 82.61px;
     right: 44px;
@@ -404,10 +401,9 @@
   }
 
   /* Hero */
-
   .hero__title {
     margin: 62px 0 0 72px;
-    max-width: 552px;
+    width: 562px;
     font-size: 60px;
     line-height: 110%;
     letter-spacing: 0.8px;
@@ -492,6 +488,8 @@
   }
 
   .promo__block--session {
+    max-width: max-content;
+    margin: auto;
     grid-template-columns: auto 1fr;
     grid-template-rows: auto 1fr auto;
   }
@@ -559,10 +557,58 @@
 }
 
 @media (min-width: 1620px) {
-  .header-bg__texture {
-    bottom: 0;
+  .header__bg__texture {
+    bottom: -60px;
     right: 0;
     min-width: 1920px;
     min-height: 881px;
+  }
+}
+
+@media (min-width: 1900px) {
+  /* Header section */
+
+  /* Background */
+  .header__bg__circle {
+    right: 309px;
+  }
+  .header__bg__figure--king {
+    right: 796px;
+  }
+  .header__bg__figure--queen {
+    right: 452px;
+  }
+  .header__bg__city {
+    right: 136px;
+  }
+  .header__bg__figure--knight {
+    right: 632px;
+  }
+  .header__bg__figure--pawn {
+    right: 320px;
+  }
+
+  .header__logo {
+    margin: 28px auto auto 18.2%;
+  }
+
+  /* Hero */
+  .hero {
+    margin: 60px 0 0 18.18%;
+    max-width: 28.23vw;
+  }
+  .hero__title {
+    letter-spacing: 0.9px;
+    margin: 0;
+  }
+  .hero__title-third {
+    letter-spacing: 0.5px;
+    margin: 0;
+  }
+  .hero__desc {
+    margin: 24px 0 0 0;
+  }
+  .hero__actions {
+    margin: 40px 160px auto auto;
   }
 }

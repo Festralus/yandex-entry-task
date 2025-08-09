@@ -4,8 +4,8 @@
     <!-- General -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="description" content="Адаптивный лендинг по Figma-дизайну" />
+    <meta name="theme-color" content="#e9ded4" />
     <title>Yandex Entry Task</title>
 
     <!-- Fonts -->
@@ -55,21 +55,22 @@
         <img
           src="assets/images/background-circle.webp"
           alt=""
-          class="header-bg__circle"
+          class="header__bg__circle"
           draggable="false"
+          aria-hidden="true"
         />
 
         <!-- header__bg layer 2 -->
         <img
           src="assets/images/background-king.webp"
           alt=""
-          class="header-bg__figure header-bg__figure--king"
+          class="header__bg__figure header__bg__figure--king"
           draggable="false"
         />
         <img
           src="assets/images/background-queen.webp"
           alt=""
-          class="header-bg__figure header-bg__figure--queen"
+          class="header__bg__figure header__bg__figure--queen"
           draggable="false"
         />
 
@@ -77,13 +78,13 @@
         <img
           src="assets/images/background-city.webp"
           alt=""
-          class="header-bg__city"
+          class="header__bg__city"
           draggable="false"
         />
 
         <!-- header__bg layer 4 -->
         <img
-          class="header-bg__texture"
+          class="header__bg__texture"
           alt=""
           src="assets/images/background-texture-header-mobile.webp"
           srcset="
@@ -94,6 +95,7 @@
           sizes="(max-width: 1366px) 100vw, 1921px"
           width="750"
           height="812"
+          aria-hidden="true"
           loading="lazy"
           draggable="false"
         />
@@ -102,13 +104,13 @@
         <img
           src="assets/images/background-knight.webp"
           alt=""
-          class="header-bg__figure header-bg__figure--knight"
+          class="header__bg__figure header__bg__figure--knight"
           draggable="false"
         />
         <img
           src="assets/images/background-pawn.webp"
           alt=""
-          class="header-bg__figure header-bg__figure--pawn"
+          class="header__bg__figure header__bg__figure--pawn"
           draggable="false"
         />
       </div>
@@ -120,33 +122,36 @@
           draggable="false"
         />
       </div>
+      <div class="hero">
+        <h1 class="hero__title">
+          ПРЕВРАТИТЕ УЕЗДНЫЙ ГОРОД
+          <span class="hero__title-second">В СТОЛИЦУ</span>
+          <span class="hero__title-third">ЗЕМНОГО ШАРА</span>
+        </h1>
 
-      <h1 class="hero__title">
-        ПРЕВРАТИТЕ УЕЗДНЫЙ ГОРОД
-        <span class="hero__title-second">В СТОЛИЦУ</span>
-        <span class="hero__title-third">ЗЕМНОГО ШАРА</span>
-      </h1>
+        <p class="hero__desc">
+          Оплатите взнос на телеграммы для организации
+          <span class="hero__desc-second">
+            Международного васюкинского турнира по шахматам</span
+          >
+        </p>
 
-      <p class="hero__desc">
-        Оплатите взнос на телеграммы для организации
-        <span class="hero__desc-second">
-          Международного васюкинского турнира по шахматам</span
-        >
-      </p>
-
-      <div class="hero__actions">
-        <button
-          class="btn btn--primary hero__btn hero__btn-cta"
-          id="scroll-to-support"
-        >
-          Поддержать шахматную мысль
-        </button>
-        <button
-          class="btn btn--secondary hero__btn hero__btn-info"
-          id="scroll-to-info"
-        >
-          Подробнее о турнире
-        </button>
+        <div class="hero__actions">
+          <a
+            class="btn btn--primary hero__btn hero__btn-cta"
+            id="scroll-to-support"
+            href="#support-block"
+          >
+            Поддержать шахматную мысль
+          </a>
+          <a
+            class="btn btn--secondary hero__btn hero__btn-info"
+            id="scroll-to-info"
+            href="#info-block"
+          >
+            Подробнее о турнире
+          </a>
+        </div>
       </div>
     </header>
 
@@ -185,8 +190,8 @@
             <span class="promo__subtitle">
               ПОСЕТИТЕ <span class="promo__subtitle--second"> ЛЕКЦИЮ </span> НА
               ТЕМУ:
-              <span class="support__strong strong"
-                >«ПЛОДОТВ<span class="support__strong--second"
+              <span class="promo__strong--support strong"
+                >«ПЛОДОТВ<span class="promo__strong--support--second"
                   >ОРНАЯ ДЕБЮТНАЯ ИДЕЯ»</span
                 ></span
               >
@@ -194,6 +199,7 @@
           </h2>
           <img
             class="promo__image--support"
+            alt="Афиша Международного васюкинского турнира"
             src="assets/images/tournament.webp"
             draggable="false"
           />
@@ -209,6 +215,7 @@
             />
             <img
               src="assets/images/background-texture-promo.webp"
+              alt=""
               class="promo__texture"
               aria-hidden="true"
               draggable="false"
@@ -221,12 +228,15 @@
               >ОДНОВРЕМЕННОЙ ИГ<span class="promo__strong--second"
                 >РЫ В ШАХМАТЫ</span
               >
-              НА 160 ДО<span class="promo__strong--thrid">СКАХ</span></span
+              НА 160 ДО<span class="promo__strong--third">СКАХ</span></span
             >
             ГРОССМЕЙСТЕРА <span class="promo__text--second">О. БЕНДЕРА</span>
           </h2>
 
           <table class="info-table" id="info-block">
+            <caption class="visually-hidden">
+              Информация о мероприятии
+            </caption>
             <tr>
               <td class="info-table__key">Место проведения:</td>
               <td class="info-table__val">Клуб «Картонажник»</td>

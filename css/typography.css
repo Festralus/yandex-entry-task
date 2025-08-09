@@ -16,7 +16,8 @@ li {
 p,
 button,
 .note,
-td {
+td,
+a {
   font-family: "Golos Text", sans-serif;
   text-transform: none;
   font-feature-settings: "kern" 1, "liga" 1, "lnum" 1, "pnum" 1;
@@ -43,13 +44,16 @@ p {
   line-height: 23px;
 }
 
-button {
+button,
+a {
   font-size: 16px;
   font-weight: 500;
   line-height: 130%;
   /* Safari support */
   text-box-edge: cap;
   text-box-trim: cap;
+
+  text-align: center;
 }
 
 .note {
