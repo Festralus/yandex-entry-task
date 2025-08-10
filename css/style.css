@@ -69,8 +69,8 @@
 .header__bg__texture {
   position: absolute;
   z-index: 4;
-  right: -253px;
-  bottom: 0;
+  right: -122px;
+  bottom: -38px;
   min-width: 750px;
   min-height: 812px;
   pointer-events: none;
@@ -368,13 +368,57 @@
   margin: 26px auto 60px;
 }
 
-@media (min-width: 400px) {
-  /* To be continued */
+@media (max-width: 373px), (min-width: 377px) and (max-width: 1363px) {
+  .header__bg__texture {
+    right: -100px;
+  }
+
+  .header__logo {
+    margin: 18px auto auto 5vw;
+    width: clamp(213px, 30vw, 245px);
+  }
+
+  .hero__title {
+    font-size: clamp(36px, 5vw, 42px);
+    line-height: clamp(40px, 6vw, 50px);
+    width: 100%;
+    max-width: 620px;
+    margin: 42px auto auto;
+    padding: 0 3vw;
+    text-align: center;
+  }
+  .hero__title-line {
+    display: inline-block;
+    margin: auto;
+  }
+  .hero__title-line--suffix {
+    text-align: center;
+  }
+
+  .hero__desc {
+    font-size: clamp(18px, 3vw, 26px);
+    line-height: clamp(20px, 4vw, 30px);
+    text-align: center;
+    max-width: 760px;
+    margin: 23px auto auto;
+    padding: 0 20px;
+  }
+
+  .hero__actions {
+    margin: 32px auto auto;
+    width: clamp(400px, 70vw, 600px);
+    max-width: 90%;
+  }
+  .hero__btn {
+    font-size: clamp(18px, 3vw, 24px);
+    line-height: clamp(20px, 3vw, 30px);
+    padding: clamp(18px, 3vw, 22px) 14px;
+  }
 }
 @media (min-width: 617px) {
   /* To be continued */
 }
-@media (min-width: 1366px) {
+@media (min-width: 1364px) {
   /* Header section */
 
   .header {
@@ -610,7 +654,7 @@
     line-height: 120%;
   }
 }
-@media (min-width: 1390px) {
+@media (min-width: 1368px) {
   .promo__block--session {
     margin: auto;
   }
