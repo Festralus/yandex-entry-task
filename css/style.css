@@ -342,10 +342,26 @@
   font-weight: 600;
 }
 
-.info-table__val span {
+/* .info-table__val span {
   text-decoration: line-through;
   white-space: nowrap;
   text-decoration-color: #f54932;
+} */
+
+.info-table__val span {
+  position: relative;
+  white-space: nowrap;
+}
+
+.info-table__val span::after {
+  content: "";
+  position: absolute;
+  left: -3px;
+  right: 0;
+  top: 66%;
+  height: 2px;
+  background-color: #f54932;
+  transform: translateY(-50%);
 }
 
 .promo__note {
