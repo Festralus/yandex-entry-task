@@ -535,6 +535,7 @@
   }
 
   .header__bg__texture {
+    inset: auto;
     right: -276px;
     bottom: -60px;
     min-width: 1920px;
