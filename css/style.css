@@ -746,8 +746,9 @@
 
 @media (min-width: 1620px) {
   .header__bg__texture {
-    right: 0;
-    bottom: -60px;
+    inset: auto;
+    right: -16px;
+    bottom: -58px;
     min-width: 1920px;
     min-height: 881px;
   }
@@ -809,11 +810,5 @@
 
   .hero__actions {
     margin: 40px 139px auto auto;
-  }
-
-  @media (max-width: 373px) {
-    /* .hero__title {
-      font-size: 20px;
-    } */
   }
 }
