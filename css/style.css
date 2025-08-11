@@ -21,6 +21,10 @@
   isolation: isolate;
 }
 
+.circle__container {
+  display: contents;
+}
+
 .header__bg__circle {
   position: absolute;
   z-index: 1;
@@ -35,7 +39,7 @@
 .header__bg__figure--king {
   position: absolute;
   z-index: 2;
-  right: 260px;
+  right: 259px;
   bottom: 114.25px;
   width: 47.44px;
   user-select: none;
@@ -47,8 +51,8 @@
 .header__bg__figure--queen {
   position: absolute;
   z-index: 2;
-  right: 91.5px;
-  bottom: 167px;
+  right: 92.5px;
+  bottom: 166px;
   width: 48px;
   height: 106px;
   user-select: none;
@@ -58,7 +62,7 @@
 .header__bg__city {
   position: absolute;
   z-index: 3;
-  right: -110px;
+  right: -109px;
   bottom: -10px;
   min-width: 885.53px;
   user-select: none;
@@ -284,8 +288,8 @@
 .promo__texture {
   position: absolute;
   z-index: 2;
-  top: 0;
-  left: 0;
+  width: 100%;
+  inset: 0;
   pointer-events: none;
   mix-blend-mode: color-burn;
   object-fit: cover;
@@ -415,8 +419,61 @@
     padding: clamp(18px, 3vw, 22px) 14px;
   }
 }
-@media (min-width: 617px) {
-  /* To be continued */
+@media (min-width: 640px) {
+  .header__bg__texture {
+    min-width: 100vw;
+    inset: 0;
+  }
+
+  .circle__container {
+    display: block;
+    position: absolute;
+    z-index: 1;
+    right: 20%;
+    right: clamp(20%, 24vw, 35%);
+    transform: translateX(+20%);
+    bottom: 0px;
+    width: 297.47px;
+    user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+  }
+
+  .header__bg__circle {
+    right: 0px;
+  }
+  .header__bg__figure--king {
+    right: 180px;
+  }
+  .header__bg__figure--queen {
+    right: 50px;
+  }
+
+  .header__bg__city {
+    transform: translateX(-50%);
+    left: 50%;
+    right: 0;
+    min-width: 885.53px;
+  }
+
+  .header__bg__figure--knight {
+    transform: translateX(-60%), rotate(-10.5deg);
+    left: 60%;
+    right: 0;
+    width: 76.71px;
+  }
+
+  .promo__title {
+    text-align: center;
+  }
+  .promo__image--session {
+    margin: auto;
+  }
+  .promo__text {
+    padding: clamp(10px, calc(30px - 2vw), 30px);
+    margin: 64px auto auto;
+    text-align: center;
+  }
 }
 @media (min-width: 1364px) {
   /* Header section */
@@ -430,7 +487,11 @@
     height: 700px;
   }
 
+  .circle__container {
+    display: contents;
+  }
   .header__bg__circle {
+    left: auto;
     right: 33px;
     bottom: 84px;
     width: 660px;
@@ -438,12 +499,14 @@
   }
 
   .header__bg__figure--king {
+    left: auto;
     right: 520px;
     bottom: 171px;
     width: 103.8px;
   }
 
   .header__bg__figure--queen {
+    left: auto;
     right: 176px;
     bottom: 279px;
     width: 113.16px;
@@ -452,6 +515,8 @@
   }
 
   .header__bg__city {
+    left: auto;
+    transform: translateX(0);
     right: -140px;
     bottom: -21px;
     min-width: 1623.5px;
@@ -465,15 +530,17 @@
   }
 
   .header__bg__figure--knight {
+    left: auto;
     right: 356px;
     bottom: -36px;
     width: 153.87px;
   }
 
   .header__bg__figure--pawn {
+    display: block;
+    position: absolute;
     right: 44px;
     bottom: 20px;
-    display: block;
     width: 82.61px;
   }
 
@@ -552,17 +619,18 @@
 
   /* Promo */
   .promo__block--support {
-    margin: 82px 20px 0;
+    margin: 80px 31px 0;
   }
 
   .promo__title {
+    text-align: left;
     display: block;
     grid-row: 1/4;
     grid-column: 1/2;
     max-width: 764px;
-    margin: auto 68px auto auto;
+    margin: auto 66px auto auto;
     font-size: 36px;
-    line-height: 135%;
+    line-height: 49px;
   }
 
   .promo__title--span,
@@ -573,6 +641,7 @@
   }
 
   .promo__image--support {
+    /* margin: 79px 25px 0; */
     width: auto;
     height: auto;
     grid-row: 1/4;
@@ -587,22 +656,25 @@
   }
 
   .promo__image--session {
+    margin: auto;
     height: 576px;
   }
 
   .promo__image-wrapper {
     grid-row: 1/4;
     grid-column: 1/2;
-    margin: 30px auto auto 20px;
+    margin: 34px auto auto 20px;
   }
 
   .promo__text {
     grid-row: 1/2;
     grid-column: 2/3;
     max-width: 660px;
-    margin: 64px auto auto 12px;
+    margin: 64px auto auto 13px;
     font-size: 36px;
-    line-height: 135%;
+    line-height: 49px;
+    padding: 0;
+    text-align: left;
   }
 
   .info-table {
@@ -649,7 +721,7 @@
   .promo__note {
     grid-row: 3/4;
     grid-column: 2/3;
-    margin: auto auto 18px 12.5px;
+    margin: 26px auto 18px 12.5px;
     font-size: 20px;
     line-height: 120%;
   }
@@ -666,6 +738,9 @@
     bottom: -60px;
     min-width: 1920px;
     min-height: 881px;
+  }
+  .header__bg__city {
+    right: -110px;
   }
 }
 @media (min-width: 1900px) {
